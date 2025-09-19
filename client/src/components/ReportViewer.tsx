@@ -13,10 +13,7 @@ interface TableOfContentsItem {
   level: number;
 }
 
-const ReportViewer: React.FC<ReportViewerProps> = ({
-  content,
-  fullScreen = false,
-}) => {
+const ReportViewer: React.FC<ReportViewerProps> = ({ content }) => {
   const [tableOfContents, setTableOfContents] = useState<TableOfContentsItem[]>(
     []
   );
